@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:AI assistant}/InterviewAssistant",
+            "name": "Debug InterviewAssistant (InterviewAssistant)",
+            "target": "InterviewAssistant",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug InterviewAssistant (InterviewAssistant)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:AI assistant}/InterviewAssistant",
+            "name": "Release InterviewAssistant (InterviewAssistant)",
+            "target": "InterviewAssistant",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release InterviewAssistant (InterviewAssistant)"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.env
+*.local
+.build/
+InterviewAssistant/InterviewAssistant.app/
+.DS_Store
+Hanmo_Wang_Resume.pdf
+*.d
+*.o
+*.swiftdeps
+*.swiftdeps~

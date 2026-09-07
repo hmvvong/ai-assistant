@@ -1,0 +1,24 @@
+1.	Tell me about yourself
+Sure. My name is Hanmo Wang. I have a bachelor’s degree from University College London and a master’s degree from Northeastern University.
+I have about three years of software engineering experience. I spent my first two years mainly working on backend development, and more recently I’ve been focused on building AI-powered tools.
+Currently, I work at iTradeNetwork, which is a food and beverage supply chain technology company. Our platform connects food suppliers with buyers such as grocery stores, distributors, and restaurant chains.
+I’m part of a newly formed Agentic AI team. Our goal is to use AI to improve some of the existing supply chain workflows.
+One of the main products I’ve been working on was helping suppliers onboard with large buyers. Suppliers need to follow different document and requirements for things like orders, invoices, and shipping notices. We’re building an AI-powered platform that can understand those requirements, help generate validation rules, validate supplier documents, and identify issues before they are sent to the buyer.
+I’ve also worked on tools that help suppliers identify new sales opportunities and help buyers find better supplier matches.
+
+2.	Tell me about a project
+(answer the EDI validation platform here)
+One project I worked on was an EDI validation platform for supplier onboarding.
+The project had two main parts.
+The first part was converting a buyer’s spec into structured validation rules. Each buyer has a PDF specification describing what their EDI documents should look like, including required fields, hierarchy, and business rules.
+I built an AI workflow that reads the specification and converts it into a structured JSON schema. The process consists of several phases and uses predefined tool calls in each phase. It first scans the document to understand the overall structure, then processes each section one by one, then extracts the business rules, and finally builds the complete JSON.
+The second part was the validation engine. When a supplier uploads an EDI file, the backend automatically matches it with the buyer’s rule and validates the document against those rules.
+If there are errors, you can see exactly where the document failed. There is also an AI assistant where the user can click an error and get an explanation and a suggested fix. Then they can fix the document and rerun the validation until it passes.
+3.	Why Mintlify?
+I think the direction you’re building is really meaningful. As AI agents become more common, making company knowledge easy for both human and AI to understand and use is very important. 
+And also I personally enjoy the startup working style. My current company is more established, but the AI team I’m on is newly formed, so we’re also building AI-powered products from the ground up. I enjoy the kind of environment where there’s more ownership, and creativity.
+AI is also an area I already have experience in and want to continue growing in, so Mintlify feels like a really good fit for me.
+
+4.	问面试官的问题
+•	Could you tell me a little about how the engineering team is structured today? For example, what teams are there, and who would I work most closely with in this role?
+•	I’m really interested in the idea of making company knowledge easier for AI agents to understand and use. Could you share a little about how Mintlify approaches that technically?
