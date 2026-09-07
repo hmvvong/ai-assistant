@@ -1,32 +1,32 @@
 # AI Assistant
 
-自用的面试 AI 助手（macOS）。面试时实时识别面试官语音，结合个人背景信息，即时生成口语化、自然的回答建议。
+A personal macOS interview assistant. It transcribes the interviewer's speech in real time and, using your own background info, instantly generates natural, conversational answer suggestions.
 
-## 功能
+## Features
 
-- 系统音频（面试官）+ 麦克风（自己）双路采集，ScreenCaptureKit + AVAudioEngine
-- 实时语音识别：AssemblyAI Universal-Streaming
-- 回答生成：Claude Haiku，注入个人背景 + 公司信息 + 预设问答范例
-- 悬浮窗 UI：常驻置顶显示实时问题与建议回答
-- 面试问答记录：按公司/岗位/轮次归档到本地日志
+- Dual audio capture: system audio (interviewer) + microphone (you), via ScreenCaptureKit + AVAudioEngine
+- Real-time speech-to-text: AssemblyAI Universal-Streaming
+- Answer generation: Claude Haiku, with personal background + company context + preset Q&A examples injected
+- Floating always-on-top window showing the live question and suggested answer
+- Interview logging, tagged by company/position/round
 
-## 目录结构
+## Structure
 
-- `InterviewAssistant/` — Swift Package，主程序源码
-- `plan.txt` — 项目可行性分析
-- `PROGRESS.md` — 开发进度与技术决策记录
+- `InterviewAssistant/` — Swift Package, main app source
+- `plan.txt` — project feasibility analysis
+- `PROGRESS.md` — development log and technical decisions
 
-## 运行
+## Run
 
 ```bash
 cd InterviewAssistant
 ./run.sh
 ```
 
-需要在 `InterviewAssistant/.env` 中配置 AssemblyAI 与 Anthropic 的 API Key（`.env` 不提交到仓库）。
+Requires AssemblyAI and Anthropic API keys in `InterviewAssistant/.env` (not committed to the repo).
 
-个人资料、公司信息、问答记录等数据文件固定存放于 `~/Documents/InterviewAssistant/`。
+Profile, company context, and interview logs are stored under `~/Documents/InterviewAssistant/`.
 
-## 说明
+## Note
 
-仅个人使用，未做通用化设计。
+Built for personal use only, not intended as a general-purpose tool.
